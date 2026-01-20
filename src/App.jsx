@@ -1,12 +1,26 @@
 import { useState } from 'react'
-import Hero from './components/Hero'
-
+import Hero from './components/pages/Hero'
+import About from './components/pages/About'
+import CurvedLoop from './components/CurvedLoop'
+import Skills from './components/pages/Skills'
+import GradualBlur from './components/GradualBlur'
 function App() {
   return (
-    <div div className='w-full h-screen bg-black text-white'>
-      <div className='flex flex-col items-center justify-center h-full'>
-        <Hero />
-      </div>
+    <div className='w-full h-screen bg-black text-white'>
+      <Hero />
+      <About />
+      <Skills />
+      {/* <!-- Content Here - such as an image or text --> */}
+      <GradualBlur
+        target="fixed"
+        position="fixed"
+        height="12rem"
+        strength={2}
+        divCount={5}
+        curve="bezier"
+        exponential
+        opacity={1}
+      />
     </div>
   )
 }
