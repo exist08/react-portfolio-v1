@@ -12,9 +12,9 @@ function App() {
       <Skills />
       {/* <!-- Content Here - such as an image or text --> */}
       <GradualBlur
-        target="fixed"
-        position="fixed"
-        height="12rem"
+        target="page"
+        position="bottom"
+        height="20rem"
         strength={2}
         divCount={5}
         curve="bezier"
