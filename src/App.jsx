@@ -4,9 +4,11 @@ import About from './components/pages/About'
 import CurvedLoop from './components/CurvedLoop'
 import Skills from './components/pages/Skills'
 import GradualBlur from './components/GradualBlur'
+import SplashCursor from './components/SplashCursor'
 function App() {
   return (
     <div className='w-full h-screen bg-black text-white'>
+      <SplashCursor />
       <Hero />
       <About />
       <Skills />
