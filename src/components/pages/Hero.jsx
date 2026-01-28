@@ -27,7 +27,7 @@ function Hero() {
       </div>
         <SplitText
           text="ANURAG SINGH"
-          className="text-9xl font-bold text-center"
+          className="xl:text-9xl md:text-7xl text-6xl font-bold text-center"
           delay={50}
           duration={1.25}
           ease="power3.out"
@@ -85,7 +85,7 @@ function Hero() {
           onLetterAnimationComplete={() => console.log("Animation complete")}
           showCallback
         />
-        <div className="absolute bottom-0 left-0 w-full h-1/2">
+        <div className="absolute sm:bottom-0 md:bottom-1/4 bottom-1/6 left-0 w-full h-1/2">
          <CurvedLoop marqueeText="About Me ✦" />
         </div>
     </div>

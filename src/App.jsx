@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import Hero from './components/pages/Hero'
 import About from './components/pages/About'
-import CurvedLoop from './components/CurvedLoop'
 import Skills from './components/pages/Skills'
 import GradualBlur from './components/GradualBlur'
 import SplashCursor from './components/SplashCursor'
+import Expertise from './components/pages/Expertise'
+
 function App() {
   return (
     <div className='w-full h-screen bg-black text-white'>
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Expertise />
       {/* <!-- Content Here - such as an image or text --> */}
       <GradualBlur
         target="fixed"
